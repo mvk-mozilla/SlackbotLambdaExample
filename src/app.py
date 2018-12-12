@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     # TODO implement
     return {
         'statusCode': 200,
-        'body': json.dumps('I got a body for u and it comes from an S3 ZIP!!!'), #err.message if err else json.dumps(res),
+        'body': json.dumps('I got a body for u and it comes from an S3 ZIP!!!\n Plus I\'ve been testing'), #err.message if err else json.dumps(res),
         'headers': {
             'Content-Type': 'application/json',
         },
