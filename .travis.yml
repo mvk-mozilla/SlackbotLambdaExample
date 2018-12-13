@@ -8,9 +8,9 @@ install:
 - pip install awscli
 - pip install aws-sam-cli
 script:
-  pytest
-  - sam validate
-  - sam package --template-file template.yaml --s3-bucket slackbotohdeploybucket --output-template-file packaged.yaml
+- pytest
+- sam validate
+- sam package --template-file template.yaml --s3-bucket slackbotohdeploybucket --output-template-file packaged.yaml
 deploy:
   provider: script
   script: sam deploy --template-file packaged.yaml --stack-name travis-serverless-test
