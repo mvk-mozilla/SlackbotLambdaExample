@@ -1,6 +1,6 @@
-import app
+import SlackbotLambda
 
 
 
 def test_answer():
-    assert app.lambda_handler(None, None)
+    assert SlackbotLambda.lambda_handler(None, None)
