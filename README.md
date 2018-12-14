@@ -13,6 +13,7 @@ I need to figure out how to tie all that to Travis. Didn't want to go down that 
 I also created an IAM Administrator role and group and configured my local aws cli environment to use it.
 
 TO DO MONDAY 12/17:
+- Fix API Gateway- it's calling slackPy3 but the function isn't updating
 -Get complex Python to deploy to Lambda through CI
 -Add Slack request processing to Slackbot
 -Add Google API integration
